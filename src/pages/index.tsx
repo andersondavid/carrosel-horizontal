@@ -1,9 +1,13 @@
 import Image from "next/image";
 import Slider from "./Slider";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <main className="flex justify-center items-center w-screen h-screen overflow-hidden">
+      <Head>
+        <title>Carrosel</title>
+      </Head>
       <div className="border-4 border-red-500 p-5 w-[80%]">
         <Slider>
           <div className="mx-2 w-[512px] h-[512px] bg-blue-500 inline-block">
